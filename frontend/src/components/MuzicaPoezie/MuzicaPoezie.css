@@ -1,0 +1,85 @@
+.app__muzica-poezie {
+  position: relative;
+}
+
+.app__muzica-poezie-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.app__muzica-poezie-overlay img {
+  width: 391px;
+  height: 415px;
+  z-index: 0;
+}
+
+.p_letter img {
+  opacity: 0.3;
+
+}
+
+.app__muzica-poezie-content {
+  width: 100%;
+  z-index: 2;
+}
+
+.app__muzica-poezie-content_muzica {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+
+.app__muzica-poezie-content_stagemic {
+  margin: 2rem 4rem;
+}
+
+.app__muzica-poezie-content_stagemic img {
+  height: 910px;
+}
+
+.app__muzica-poezie-content_poezie {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.app__muzica-poezie-content_muzica p,
+.app__muzica-poezie-content_poezie p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__muzica-poezie-content_stagemic img {
+      height: 1110px;
+  }
+
+  .app__muzica-poezie-content_muzica p,
+  .app__muzica-poezie-content_poezie p {
+      margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app__muzica-poezie-content {
+      flex-direction: column;
+  }
+
+  .app__muzica-poezie-content_stagemic {
+      margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__muzica-poezie-overlay img {
+      width: 80%;
+      height: 320px;
+  }
+}

@@ -1,0 +1,20 @@
+.blog_posts {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-left: 300px;
+  flex-direction: column;
+}
+
+.app__header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 117px;
+  font-size: 90px;
+  text-align: center;
+  padding-bottom: 30px;
+}
